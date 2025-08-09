@@ -136,6 +136,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    padding-bottom: 80px;
 }
 
 
@@ -170,3 +171,29 @@ nav a {
 .info-subsection div p{
     text-align: center;
 }
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 340px;
+
+    background-color: var(--color2);
+}
+
+.quote-section .author{
+    align-self: flex-end;
+}
+
+.quote-section .quote{
+    font-size: var(--font-size-XL);
+    font-weight: lighter;
+    ;
+}
+.quote .author{
+    font-size: var(--font-size-L);
+}
+
+
+
