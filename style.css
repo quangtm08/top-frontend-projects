@@ -80,7 +80,7 @@ nav a {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    flex: 1;
+    width: 508px;
 }
 
 
@@ -123,12 +123,50 @@ nav a {
 
     background-image: url("#");
     background-size: cover;
-
 }
 
 
+/* Info section */
+.info h1{
+    margin-top: 30px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
 
 
+.info-subsection{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 
+}
 
+.info-subsection div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.info-subsection .img-placeholder{
+    width: 160px;
+    height: 160px;
+    border-radius: 18px;
+    border-color: var(--button-color);
+    border-style: solid;
+    border-width: 6px;
+
+    background-image: url("#");
+}
+
+.info-subsection > div{
+    width: 160px;
+}
+
+.info-subsection div p{
+    text-align: center;
+}
