@@ -1,3 +1,15 @@
+:root{
+    --font-s: 0.85em;
+    --font-m: 1em;
+    --font-l: 1.5em;
+    --font-xl: 3em;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 body{
     margin: 0;
 
@@ -12,10 +24,44 @@ body{
     background-color: #D3D3D3;
 }
 
-.sidebar{
-    background-color: #1A92D3;
-    grid-area: sidebar;
+ul{
+    padding: 0;
 }
+
+
+
+/* ========SIDEBAR======== */
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+    color: white;
+    background-color: #1A92D3;
+   
+}
+
+
+
+.sidebar li{
+    list-style-type: none;
+}
+
+.branding p{
+    font-size: var(--font-l);
+    font-weight: 600;
+}
+
+
+.sidebar-item, .branding{
+    padding: 12px 12px 12px 24px;
+    display: flex;
+}
+
+
 
 .top-bar{
     grid-area: topbar;
@@ -26,7 +72,6 @@ body{
 }
 
 .dashboard{
-
     grid-area: dashboard;
     background-color: #D3D3D3;
 }
