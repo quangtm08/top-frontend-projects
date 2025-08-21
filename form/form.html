@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+    <main>
+        <div class="banner"></div>
+
+        <div class="form-section">
+            
+            <form action="/my-form" method="post">
+                <div class="input-section">
+                    <h1>Let's do this!</h1>
+                    
+                    <p>
+                        <span>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" required>
+                        </span>
+                    
+                    
+                        <span>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" required>
+                        </span>
+                    
+                    
+                    </p>
+                    <p>
+                        <span>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </span>
+                    
+                        <span>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" id="phoneNumber" required>
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" minlength="8" required>
+                        </span>
+                        <span>
+                            <label for="confirmPassowrd">Confirm Password</label>
+                            <input type="password" id="confirmPassowrd" required>
+                        </span>
+                    </p>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+
+            </form>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+    
+</body>
+</html>
