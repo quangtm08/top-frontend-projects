@@ -33,9 +33,21 @@ ul{
 /* ========SIDEBAR======== */
 .sidebar{
     grid-area: sidebar;
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr repeat(10, 1fr);
+    grid-template-areas: 
+    'icon brand'
+    
+    'icon text'
+    'icon text'
+    'icon text'
+    'icon text'
+    'icon text'
+    'icon text'
+    'icon text'
+    'icon text'
+    'icon text';
 
 
 
@@ -44,24 +56,63 @@ ul{
    
 }
 
-
+.sidebar-text{
+    grid-area: text;
+}
 
 .sidebar li{
     list-style-type: none;
 }
 
-.branding p{
-    font-size: var(--font-l);
-    font-weight: 600;
+
+
+.sidebar a.sidebar-item, .sidebar a.branding {
+    padding: 12px 12px 12px 24px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
+.sidebar a.sidebar-item{
+    gap: 1.5em;
+    font-weight: 600;
+}
+.sidebar a.branding {
+    gap: 1em;
+    font-size: var(--font-l);
+    font-weight: 600;
 
-.sidebar-item, .branding{
-    padding: 12px 12px 12px 24px;
     display: flex;
 }
 
+.sidebar ul{
+    margin-bottom: 100px;
+}
 
+
+.sidebar a.sidebar-item svg{
+    aspect-ratio: 1 / 1;
+    height: 18px;
+    fill: white;
+
+    grid-area: icon;
+}
+
+.sidebar a.branding svg{
+    aspect-ratio: 1 / 1;
+    height: 24px;
+    fill: white;
+
+    grid-area: icon;
+}
+
+
+
+
+
+
+/* ============================ */
 
 .top-bar{
     grid-area: topbar;
