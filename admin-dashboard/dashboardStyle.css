@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    'sidebar topbar'
+    'sidebar dashboard';
+
+    background-color: #D3D3D3;
+}
+
+.sidebar{
+    background-color: #1A92D3;
+    grid-area: sidebar;
+}
+
+.top-bar{
+    grid-area: topbar;
+    background-color: white;
+
+    height: 100px;
+    width: 100%;
+}
+
+.dashboard{
+
+    grid-area: dashboard;
+    background-color: #D3D3D3;
+}
