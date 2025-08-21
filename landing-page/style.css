@@ -1,0 +1,248 @@
+:root{
+    --dark-background: #1F2937;
+    --color1: #F9FAF8;
+    --color2: #E5E7EB;
+    --button-color: #3882F6;
+
+    --font-size-XXL: 3em;
+    --font-size-XL: 2.25em;
+    --font-size-L: 1.5em;
+    --font-size-M: 1.125em;
+}
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+body{
+    display: flexbox;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+/* HEADER */
+
+header, footer{
+    display: flex;
+    background-color: var(--dark-background);
+    margin: 0;
+}
+
+header {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 88px;
+}
+
+.logo {
+    font-size: var(--font-size-L);
+    color: var(--color1);
+    font-weight: bold;
+}
+
+
+nav ul {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 44px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: var(--font-size-M);
+    color: var(--color2);
+}
+
+
+/* HERO */
+
+
+.hero {
+    background-color: var(--dark-background);
+    margin: 0;
+    padding: 40px 88px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 508px;
+}
+
+
+.hero-left .hero-main-text{
+    font-size: var(--font-size-XXL);
+    color: var(--color1);
+    font-weight: 900;
+    margin: 0 0 20px 0;
+}
+
+.hero-left .hero-secondary-text {
+    font-size: 1em;
+    color: var(--color2);
+    margin: 0 0 20px 0;
+}
+
+
+
+
+.hero-left button {
+    background-color: var(--button-color);
+    color: var(--color2);
+
+    font-size: 1em;
+
+    border-radius: 4px;
+    border: none;
+
+    padding: 12px;
+}
+
+
+.hero-right {
+    background-color: gray;
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("#");
+    background-size: cover;
+}
+
+
+/* Info section */
+.info h1{
+    margin-top: 30px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 80px;
+}
+
+
+.info-subsection{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.info-subsection div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-subsection .img-placeholder{
+    width: 160px;
+    height: 160px;
+    border-radius: 18px;
+    border-color: var(--button-color);
+    border-style: solid;
+    border-width: 6px;
+
+    background-image: url("#");
+}
+
+.info-subsection > div{
+    width: 160px;
+}
+
+.info-subsection div p{
+    text-align: center;
+}
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 340px;
+
+    background-color: var(--color2);
+}
+
+.quote-section .author{
+    align-self: flex-end;
+}
+
+.quote-section .quote{
+    font-size: var(--font-size-XL);
+    font-weight: lighter;
+    ;
+}
+.quote .author{
+    font-size: var(--font-size-L);
+}
+
+/* CALL TO ACTION */
+
+.CTA{
+    margin: 100px 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--button-color);
+    border-radius: 4px;
+    padding: 24px 32px;
+
+    color:var(--color2);
+}
+
+.CTA button{
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+
+    background-color: var(--button-color);
+    color: var(--color2);
+    font-size: var(--font-size-M);
+
+    padding: 4px 16px;
+
+}
+
+
+
+
+.CTA .primary{
+    font-size: var(--font-size-M);
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.CTA .secondary{
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+footer{
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    color: var(--color2);
+    font-size: 1em
+}
