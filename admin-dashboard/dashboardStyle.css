@@ -65,6 +65,8 @@ ul{
     grid-template-columns: 1fr 6fr;
 }
 .sidebar a.branding {
+    margin: 12px 0;
+    
     gap: 0.5em;
     font-size: var(--font-l);
     font-weight: 600;
@@ -74,7 +76,7 @@ ul{
 }
 
 .sidebar ul{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
@@ -94,12 +96,19 @@ ul{
     grid-area: icon;
 }
 
+.sidebar ul a:hover svg, .sidebar ul a:hover .sidebar-text{
+   color: rgb(6, 65, 109);
+   fill: rgb(6, 65, 109);
+   transition-duration: 200ms;
+}
+
 
 
 
 
 
 /* ============================ */
+/* ==========TOP BAR========== */
 
 .top-bar{
     grid-area: topbar;
@@ -107,7 +116,33 @@ ul{
 
     height: 100px;
     width: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
+
+.search{
+    display: flex;
+    padding: 16px 20px;
+    gap: 8px;
+}
+
+.search input{
+    width: 80%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #E2E8F0;
+    border: none;
+}
+
+.search svg{
+    aspect-ratio: 1 / 1;
+    height: 20px;
+}
+
+
+
 
 .dashboard{
     grid-area: dashboard;
